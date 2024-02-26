@@ -1,0 +1,317 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(high-angle-view-laptop-stationeries-blue-background.jpg);; 
+    width: 1320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
+header {
+    background-image: url(AdobeStock_326444126_Preview.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #0a0909;
+    padding: 10px;
+    width: 1320px;
+    text-align:center;
+    /* display: flex; */
+}
+.logo1 {
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo1 img {
+  max-width: 100px;
+  height: auto;
+}
+
+
+
+.logo img{
+    width: 139px;
+    height: auto;
+    margin-right:5px;
+}
+
+
+header h1 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right:20px;
+}
+
+nav ul li a {
+    color: #0e0d0d;
+    text-decoration: none;
+}
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+  }
+  
+  li {
+    text-align: center;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: rgb(7, 1, 1);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 3px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    
+}
+
+form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    width: 200px;
+}
+.button:hover {background: #eeecec;}
+.button:hover {display: block;}
+form button {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.card {
+    margin: 1em;
+
+    .card-img-top {
+      position: relative;
+      z-index: 1;
+      width: 290px;
+      height: 222px;
+      transform: translateY(55%);
+      transition: 0.5s;
+      
+    }
+
+    .card-body {
+      z-index: 1;
+      box-sizing: border-box;
+      width: 290px;
+      padding: 1.25em;
+      height: 220px;
+      background: rgb(236, 236, 235);
+      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.056),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.081), 0 12.5px 10px rgba(0, 0, 0, 0.1),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.119),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.144), 0 100px 80px rgba(0, 0, 0, 0.2);
+        
+      transform: translateY(-50%);
+      transition: 0.5s;
+
+      .card-title {
+        margin: 0 0 0.75em 0;
+        font-size: 1.25em;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+
+      .card-text {
+        margin: 0 0 1em 0;
+      }
+
+      .btn {
+        padding: 0.375em 0.75em;
+        color: black;
+        text-decoration: none;
+        line-height: 1.5;
+        border: 1px solid black;
+        border-radius: 0.25em;
+        transition: 0.5s;
+
+        &:hover {
+          color: white;
+          background: black;
+        }
+      }
+    }
+
+    &:hover {
+      .card-img-top {
+        transform: translateY(2%);
+      }
+
+      .card-body {
+        transform: translateY(0);
+      }
+    }
+  }
+
+h3{
+    height: 35px;
+    width: 65px;
+    text-align: center;
+}
+.toppers-strategies {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+  left: 16%;
+  background-color:none;
+  border-radius: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style individual topper items */
+.topper-item {
+  /* flex: 0 0 calc(50% - 10px); */
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: relative;
+  right:25%;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the topper name */
+.topper-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style the topper notes */
+.topper-notes {
+  color: #666;
+}
+.view-more-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-more-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+footer {
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+footer ul li a:hover {
+  color: black;
+  border: none;
+
+}
+
+.whatsapp-button {
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-button img {
+  height: 55px;
+}
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Years' Question Papers & Notes</title>
+    <link rel="stylesheet" href="cssrev10.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script>
+            function redirectToNewPage() {
+                // Redirect to the new page
+                window.location.href = "topper1.html";
+            }
+        </script>
+          <script>
+            function redirectToNewPage2() {
+                // Redirect to the new page
+                window.location.href = "topper2.html";
+            }
+        </script>
+     
+</head>
+
+<body>
+    <header>
+        <div class="logo1">
+            <img src="college-sahayta-high-resolution-logo-transparent.png" alt="logo">
+        </div>
+        <div class="page">
+            <p style="background-image: url('./high-angle-view-laptop-stationeries-blue-background.jpg');"></p>
+            <div class="logo">
+                <img src="open-book-hand-pointing-icon.png" alt="website logo">
+
+            </div>
+            <h1>Welcome To E-Learning Platform</h1>
+            <!-- Navigation Menu -->
+            <nav>
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i><a href="main.html">Home</a></li>
+                        <li><i class="fa-solid fa-book-open-reader"></i><li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">Course</a>
+                          <div class="dropdown-content">
+                            <a href="#">BCA</a>
+                            <a href="#">B.com</a>
+                            <a href="#">MBA</a>
+                            <a href="#">BBA</a>
+                            <li><i class="fa-solid fa-address-book"></i><li class="dropdown">
+                                <a href=""class="dropbtn">Contact</a>
+                                <div class="dropdown-content">
+                                  <a href="contact.html">Contact-us</a>
+                                  <a href="#">Student Feedback</a>
+                    <li><i class="fa-solid fa-book-open-reader"></i><li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Login</a>
+                        <div class="dropdown-content">
+                          <a href="index.php">Student</a>
+                    <!-- Add link to login page -->
+                          </div>
+                        </li>
+                      </ul>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2 style="text-align:center;font-size: 30px;">Welcome to our website!</h2>
+            <p style="text-align: center;">Find previous years' question papers and notes for various courses.</p>
+            <!-- Search Bar -->
+            <form style="text-align: center;" onsubmit="searchCourse(event)">
+                <input type="text" id="searchInput" name="search" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+            <script>
+                function searchCourse(event) {
+                    event.preventDefault(); // Prevent default form submission behavior
+                    var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+                    console.log("search term:", searchTerm);
+                    if (searchTerm === "bca") {
+                        window.location.href = "bca.html"; // Redirect to BCA page
+                    } else if (searchTerm === "bba") {
+                        window.location.href = "bba.html"; // Redirect to BBA page
+                    } else if (searchTerm === "bcom") {
+                        window.location.href = "bcom.html"; // Redirect to BCom page
+                    } else if (searchTerm === "mba") {
+                        window.location.href = "mba.html"; // Redirect to MBA page
+                    } else {
+                        alert("Course not found!"); // Display an alert if course not found
+                    }
+                }
+                </script>
+        </section>
+        <section id="Course">
+            <h2 style="text-align: center ; left: 40%;font-size: 45px;">Courses</h2>
+            <!-- Course Listings -->
+            <div class="container">
+                <div class="card">
+                    <img src="Bca image.jpg" alt="BCA" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">BCA</h5>
+                        <p class="card-text">BCA program curriculum provides a foundation in computer science, programming concepts,
+                            and applications</p>
+                        <a href="BCA.html" class="btn">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="banner_bcom.jpg" alt="Bcom" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Bcom</h5>
+                        <p class="card-text">Marketing, Accounting, Taxation, Industrial laws,
+                            Financial accounting, Economics, Auditing, Business management</p>
+                        <a href="Bcom.html" class="btn">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="BBA-Colleges-in-UP.jpeg" alt="BBA" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">BBA</h5>
+                        <p class="card-text">Principles of management, Managerial economics,
+                            Financial management, Business law, Accounting, Marketing, Operations management.</p>
+                        <a href="BBA.html" class="btn">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="MBA-Life-blog-image-Choosing-MBA.jpg" alt="MBA" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">MBA</h5>
+                        <p class="card-text">students develop business skills and knowledge,
+                            such as leadership and business acumen.</p>
+                        <a href="MBA.html" class="btn">More</a>
+                    </div>        
+                 </div>
+            </div>
+         </div>
+                <!-- Add more courses as needed -->
+        </div>
+        </section>
+        <section class="toppers-strategies">
+            <h2 style="text-align: center;  font-size:45px; margin-bottom:25px;">Toppers strategies</h2>
+            <div class="topper-item">
+                <p class="topper-name">Topper 1</p>
+                <p class="topper-notes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+                <button  onclick="redirectToNewPage()" class="view-more-btn">View More</button>
+            </div>
+
+            <div class="topper-item">
+                <p class="topper-name">Topper 2</p>
+                <p class="topper-notes">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <button onclick="redirectToNewPage2()" class="view-more-btn">View More</button>
+            </div>
+           
+
+            <!-- Add more topper items as needed -->
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Previous Years' Question Papers & Notes</p>
+        <!-- Social Media Links -->
+        <ul>
+            <li><i class="fa-brands fa-facebook"></i><a href="#"> Facebook</a></li>
+            <li><i class="fa-brands fa-twitter"></i><a href="#"> Twitter</a></li>
+            <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/jatinjoshi2003"> Instagram</a>
+            </li>
+        </ul>
+        <!-- Additional Links -->
+        <ul>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+    </div>
+    <a href="https://wa.me/9012044721" target="_blank" class="whatsapp-button">
+        <img src="whatsapp-icon-.png" alt="WhatsApp Logo">
+    </a>
+</body>
+
+</html>

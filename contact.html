@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-image: url(high-angle-view-various-stationeries-yellow-backdrop.jpg);
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-image: url(high-angle-view-laptop-stationeries-blue-background.jpg);
+            background-size: cover;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        #home {
+            display: flex;
+            justify-content: flex-start;
+            text-decoration: underline;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <span id="home"><a href="main.html">Home</a>
+        </span>
+    <div class="container">
+        <h2 style="text-align:center;font-size: 30px;">Contact Form</h2>
+        <form action="submit_contact_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <h2>Contact Information</h2>
+        <p>Email: <a href="jatinjoshi02212@gmail.com">jatinjoshi02212@gmail.com</a></p>
+        <p>Phone:+919012044721</p>
+        <p>Address:Vaishali colony,kashipur,Uttarakhand,India</p>
+
+        <!-- Add social media links, business hours, FAQs, etc. -->
+    </div>
+</body>
+</html>
