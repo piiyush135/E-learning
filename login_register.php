@@ -23,14 +23,27 @@ if(isset($_POST['login'])) {
    if($result) {
      if(mysqli_num_rows($result) == 1) {
        $result_fetch = mysqli_fetch_assoc($result);
+       if(Password_verify($password,$result_fetch['Password'])){
+
+       
        // Perform further authentication checks here
        // Assuming authentication is successful, redirect to main.htm
-       header("Location: main.html");
-       exit(); // Ensure that no further code is executed after redirection
-     } else {
+       header("Location:main.html");
+       exit(); 
+       } 
+       else
+       {
+        showErrorAlert("incorrect password","index.php");
+       }
+      // Ensure that no further code is executed after redirection
+     } 
+     else 
+     {
        showErrorAlert("Email or Username Not Registered", "index.php");
      }
-   } else {
+   } 
+   else 
+   {
       showErrorAlert("Cannot Run Query", "index.php");
    }
 }
