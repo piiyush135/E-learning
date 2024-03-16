@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploring Queues</title>
+  <link rel="stylesheet" href="queue.css">
+</head>
+
+<body>
+  <header>
+    <h1>Exploring Queues</h1>
+    <a href="dsa.html" class="back-button">Back</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Introduction to Queues</h2>
+      <p>A queue is a linear data structure that follows the First In First Out (FIFO) principle, where the element
+        inserted first is the one to be removed first. It is similar to waiting in a line at a ticket counter or a
+        queue of vehicles at a toll booth.A Queue Data Structure is a fundamental concept in computer science used for storing and managing data in a specific order.Queues are commonly used in various algorithms and applications for their simplicity and efficiency in managing data flow.</p>
+    </section>
+    <section>
+      <h2>What Are Queues?</h2>
+      <img src="queue 1.png" alt="Queue Introduction Image">
+      <p>In computer science, a queue is a collection of entities that are maintained in a sequence and can be modified
+        by the addition of entities at one end of the sequence and the removal of entities from the other end of the
+        sequence. The primary operations on a queue are enqueue (adding an element to the rear) and dequeue (removing an
+        element from the front).</p>
+
+      <ul>
+        <li><strong>First In First Out (FIFO):</strong> The element that is added first to the queue will be the first
+          one to be removed.</li>
+        <li><strong>Operations:</strong> Queues typically support operations such as enqueue (insertion), dequeue
+          (removal), peek (retrieve the front element without removing it), and isEmpty (check if the queue is empty).</li>
+        <li><strong>Real-world Analogy:</strong> Queues can be likened to real-world scenarios such as waiting lines at
+          a ticket counter, ordering food at a restaurant, or processing tasks in a computer system.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Basic Operations on Queues</h2>
+      <div class="operation">
+        <h3>Enqueue:</h3>
+        <p>Adds an item to the rear end of the queue.</p>
+        <pre><code>Algorithm for enqueue:
+1. Check if the queue is full.
+2. If the queue is full, display an overflow error.
+3. If the queue is not full, increment the rear pointer and add the item to the rear position of the queue.
+</code></pre>
+      </div>
+
+      <div class="operation">
+        <h3>Dequeue:</h3>
+        <p>Removes an item from the front end of the queue.</p>
+        <pre><code>Algorithm for dequeue:
+1. Check if the queue is empty.
+2. If the queue is empty, display an underflow error.
+3. If the queue is not empty, remove the item from the front position of the queue and increment the front pointer.
+</code></pre>
+      </div>
+
+      <div class="operation">
+        <h3>Peek:</h3>
+        <p>Retrieves the front element of the queue without removing it.</p>
+        <pre><code>Algorithm for peek:
+1. Check if the queue is empty.
+2. If the queue is empty, display an underflow error.
+3. If the queue is not empty, return the element at the front position of the queue.
+</code></pre>
+      </div>
+
+      <div class="operation">
+        <h3>isEmpty:</h3>
+        <p>Checks if the queue is empty.</p>
+        <pre><code>Algorithm for isEmpty:
+1. If the front pointer is equal to the rear pointer, the queue is empty.
+2. Otherwise, the queue is not empty.
+</code></pre>
+      </div>
+    </section>
+    <section id="queue-implementation">
+        <h2>Implementation of Queue Data Structure</h2>
+        <p>Queue can be implemented using an Array, Stack, or Linked List. The easiest way of implementing a queue is by using an Array.</p>
+        <p>Initially, the head (FRONT) and the tail (REAR) of the queue points at the first index of the array (starting the index of the array from 0). As we add elements to the queue, the tail keeps on moving ahead, always pointing to the position where the next element will be inserted, while the head remains at the first index.</p>
+        <img src="implementation-of-queue.webp" alt="Queue Implementation">
+    
+        <h3>Approaches to Remove Elements from Queue</h3>
+        <p>When we remove an element from the Queue, we can follow two possible approaches:</p>
+        <ol>
+            <li><strong>Approach [A]:</strong> Remove the element at the head position and then shift all the other elements one position forward.</li>
+            <li><strong>Approach [B]:</strong> Remove the element from the head position and then move the head to the next position.</li>
+        </ol>
+        <p>In approach [A], there is an overhead of shifting the elements one position forward every time we remove the first element. In approach [B], there is no such overhead, but whenever we move the head one position ahead after the removal of the first element, the size of the Queue is reduced by one space each time.</p>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>© College Sahayata. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
